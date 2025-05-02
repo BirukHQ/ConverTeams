@@ -1,0 +1,256 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #1c1c1c;
+    background-color: #fff;
+  }
+  h1, h2, h3, h4 {
+    margin: 0 0 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .btn {
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  .btn:hover {
+    background-color: #b7b1a7;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #c7f7f7;
+    padding: 80px 20px;
+  }
+  
+  /* Difference Section */
+  .difference h2,
+  .difference p {
+    margin-bottom: 20px;
+  }
+  .image-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+  }
+  .image-gallery img {
+    width: 260px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: opacity 0.6s ease;
+  }
+  
+  /* Approach Section */
+  .approach h2 {
+    margin-bottom: 40px;
+  }
+  .approach-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .approach-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .step {
+    flex: 1 1 300px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  /* Expectation Section */
+  .expect {
+    background: #f9f9f9;
+  }
+  .expect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .expect-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  .expect-item img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  /* CTA Section */
+  .cta {
+    background-color: #c7f7f7;
+    padding: 60px 20px;
+  }
+  .dot-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  .image-gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  
+  .image-gallery img {
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+  }
+  
+  .image-gallery img.active {
+    opacity: 1;
+  }
+  
+  .dot-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  .image-gallery img {
+    opacity: 0.3;
+    transition: opacity 0.6s ease;
+  }
+  
+  .image-gallery img.active {
+    opacity: 1;
+  }
+/* ========== MOBILE OPTIMIZATION ========== */
+@media (max-width: 768px) {
+    h1, h2, h3, h4 {
+      font-size: 1.3em;
+      text-align: center;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 16px;
+      font-size: 1em;
+    }
+  
+    .image-gallery {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .image-gallery img {
+      scroll-snap-align: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .expect-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .expect-item {
+      text-align: left;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+  
+    .expect-item img {
+      width: 40px;
+    }
+  
+    .approach-image img {
+      width: 100%;
+    }
+  
+    .dot-container {
+      margin-bottom: 20px;
+    }
+  
+    .container {
+      padding: 20px 10px;
+    }
+  
+    .cta .btn {
+      font-size: 1rem;
+      padding: 14px 20px;
+    }
+  }
+  
