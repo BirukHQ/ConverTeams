@@ -1,2 +1,2 @@
 # ConverTeams
-Its our professional landing Page and Redesigning Advertisement Page
+Our professional landing page highlights our expertise in creating custom landing pages and redesigning existing websites.
